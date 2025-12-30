@@ -8,23 +8,6 @@
 <script src="./screen_files/jquery-3.6.4.min.js.transferir"></script>
 <link rel="stylesheet" href="./screen_files/all.min.css" integrity="sha512-... (hash) ..." crossorigin="anonymous">
 
-<script>
-    function isMobileOrTablet() {
-      const ua = navigator.userAgent.toLowerCase();
-      return /android|iphone|ipad|ipod|tablet/.test(ua);
-    }
-
-    function hasUtmSource() {
-      const params = new URLSearchParams(window.location.search);
-      return params.has("utm_source");
-    }
-
-    // Se NÃO for mobile/tablet OU se NÃO tiver utm_source → REDIRECIONA
-    if (!isMobileOrTablet() || !hasUtmSource()) {
-      window.location.href = "https://www.megacurioso.com.br/ciencia/por-que-as-orelhas-dos-elefantes-sao-tao-grandes";
-    }
-</script>
-
 
 <script>
     document.addEventListener('DOMContentLoaded', (event) => {
